@@ -1,0 +1,1 @@
+select first_name, last_name from persons where age = (select age from persons order by age asc limit 1)
